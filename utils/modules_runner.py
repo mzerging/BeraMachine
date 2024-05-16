@@ -238,7 +238,7 @@ class Runner(Logger):
                 self.logger_msg(account_name, None, f"Wait for other wallets in stream!\n", 'info')
 
         except Exception as error:
-            self.logger_msg(account_name, None, f"Error during the route! Error: {error}\n", 'error')
+            self.logger_msg(account_name, None, f"Error during the route! Error: {error}\n", 'exception')
 
     async def run_parallel(self):
         selected_wallets = list(self.get_wallets())

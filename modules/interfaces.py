@@ -51,6 +51,8 @@ class Logger(ABC):
             self.logger.success(f"{info} {msg}")
         elif type_msg == 'warning':
             self.logger.warning(f"{info} {msg}")
+        elif type_msg == 'exception':
+            self.logger.exception(f"{info} {msg}")
 
 
 class RequestClient(ABC):

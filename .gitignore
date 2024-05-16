@@ -5,3 +5,6 @@ general_settings.py
 *.xml
 *.pyc
 *.log
+
+
+venv/
